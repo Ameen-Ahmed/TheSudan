@@ -1,0 +1,229 @@
+/*Reset*/
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+/*Box Model*/
+    html {
+        box-sizing: border-box;
+    }
+    *, *:before, *:after {
+        box-sizing: inherit;
+    }
+
+/*Generic classes*/
+
+    html, body {
+        width: 100%;
+        height: 100%;
+    }
+    body {
+     	font-size: 20pt;
+		font-family: Lateef, sans-serif;
+        /*background-color: #878e83;*/
+
+        background-color: #ffeed1; /*navajowhite: #ffdead*/
+		letter-spacing: -1px;
+        text-align: center;
+        margin: 0 auto;
+	}
+
+	h1, h2, h3, h4 {
+		color: #a61f3e;
+		font-weight: normal;
+	}
+
+    h1 {
+        font-size: 2.2em;
+    }
+
+	h2 {
+		font-size: 1.75em;
+		letter-spacing: -1px;
+		margin-bottom: 1em;
+	}
+
+	h3 {
+		font-size: 1.2em;
+		margin-bottom: 0.8em;
+	}
+
+	h4 {
+		font-size: 1em;
+	}
+
+	p, ul {
+		margin-bottom: 1.25em;
+	}
+
+	p {
+		line-height: 1.8em;
+	}
+
+	img {
+		margin: auto;
+	}
+
+	ul {
+		padding: 0.25em 0 0 0;
+	}
+
+	a {
+		/*color: #5d93a2;*/
+        text-decoration: none;
+	}
+
+		a:hover {
+			text-decoration: underline;
+		}
+
+/*Containers*/
+.container {
+    width: 70%;
+    margin: 10px auto 0;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.map_container {
+    position: relative;
+    width: 80%;
+    overflow: auto;
+    margin: auto;
+    padding: 20px auto 10px auto;
+}
+
+    .map_container .info {
+        float: right;
+        height: inherit;
+        width: 30%;
+        text-align: center;
+    }
+        .info .hidden{
+            display: none;
+        }
+
+    .map_container img {
+        width: 791px;
+        height: 636px;
+        float: left;
+    }
+    .map_container .outline {
+        width: inherit;
+        height: inherit;
+        position: absolute;
+        top: 13px;
+        left: 6px;
+    }
+        .outline svg {
+            float: left;
+        }
+
+/* Header*/
+    header {
+        padding-top: 120px;
+    }
+
+/* Banner */
+    .banner {
+        width: 70%;
+        margin: auto;
+        height: 500px;
+        opacity: 1;
+    }
+        .banner #image-home {
+            height: 100%;
+            background: top url("../images/SudanFlagPicture.jpg") no-repeat fixed;
+            background-size: contain;
+        }
+        .banner #image-politics {
+            height: 100%;
+            background: top url("../images/presidential-palace.jpg") no-repeat fixed;
+            background-size: contain;
+        }
+        .banner #image-culture {
+            height: 100%;
+            background: top url("../images/sudan-pyramids.jpg") no-repeat fixed;
+            background-size: contain;
+        }
+        .banner #image-history {
+            height: 100%;
+            background: top url("../images/historical.gif") no-repeat fixed;
+            background-size: contain;
+        }
+        .banner:hover,
+        .banner:focus {
+            opacity: .5;
+        }
+
+        .banner h2 {
+            display: inline-block;
+            font-size: 3em;
+            color: #fff;
+            text-align: center;
+
+        }
+
+        .banner span {
+            display: block;
+            width: 100%;
+            font-size: 1.6em;
+            /*/*color: #fff;*/
+        }
+    nav {
+        position: fixed;
+        width: 100%;
+        background-color: navajowhite;
+        display: block;
+        z-index: 1;
+    }
+        nav a {
+            font-size: 1em;
+            color: darkgreen;
+            display: inline-block;
+            padding-left: 10px;
+            padding-right: 10px;
+            text-transform: uppercase;
+        }
+
+        nav h1 {
+            display: inline-block;
+            padding: 15px;
+        }
+        nav h1 > a:hover {
+            text-decoration: none;
+        }
+/* Main */
+
+    main {
+        display: block;
+        overflow: auto;
+    }
+
+/* Footer */
+
+    footer {
+        clear: both;
+        margin-top: 10px;
+
+    }
+        footer hr{
+            display: block;
+            height: 1px;
+            background-color: #a61f3e;
+            border-color: #a61f3e;
+            color: #a61f3e;
+            width: 85%;
+            margin: 50px auto 40px auto;
+            padding: 0;
+        }
+        footer a {
+            font-size: 1em;
+            color: darkgreen;
+            padding: 15px;
+        }
+        footer a:hover {
+            text-decoration: none;
+        }
