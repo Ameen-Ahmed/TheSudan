@@ -5,7 +5,7 @@
 {% block title %}Map{% endblock %}
 
 {% block scripts %}
-    <script src="{% static 'scripts/map/script.js'%}" defer></script>
+    <script src="{% static 'map/scripts/script.js' %}" defer></script>
 {% endblock %}
 
 {% block banner %}
@@ -13,7 +13,7 @@
 
 {% block main_content %}
     <div class="map_container">
-        <img src= {% static 'images/map/sudan-map.jpg' %}>
+        <img src= {% static 'map/images/sudan-map.jpg' %}>
         <?xml version="1.0" encoding="UTF-8" standalone="no"?>
         <div class="info">
             {% for region in regions %}
