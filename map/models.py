@@ -28,8 +28,5 @@ class Region(models.Model):
     def __str__(self):
         return '{}'.format(self.name.capitalize())
 
-# count = 0
 # for region in REGIONS:
-#     print(count, region)
-#     count +=1
 #     Region.objects.create(**region)
